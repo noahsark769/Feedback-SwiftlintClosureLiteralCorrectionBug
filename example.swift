@@ -9,13 +9,14 @@ struct Example {
     let four: String
 }
 
-let example = Example(one: "Hey"
-                            two: "Hey"
+let example = Example(one: "Hey",
+                            two: "Hey",
                             closureStructs: [
                             "A": TakesAClosure(closure: {
                                 print("A")
                             }),
                             "B": TakesAClosure(closure: {
-
+                                print("B")
                             })],
                             four: "Hey")
+print(example)
